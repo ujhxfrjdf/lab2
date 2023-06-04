@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Квадратное уравнение</string>
+    <string name="edit_text_a"></string>
+    <string name="edit_text_b"></string>
+    <string name="edit_text_c"></string>
+    <string name="text_show">Введите коэффициенты квадратного уравнения</string>
+    <string name="button_text">Вычислить</string>
+</resources>

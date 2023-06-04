@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textShow"
+        android:layout_width="329dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="103dp"
+        android:gravity="center"
+        android:text="@string/text_show"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="22sp"
+        android:translationY="-40sp"
+        app:layout_constraintBottom_toTopOf="@+id/editA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <EditText
+        android:id="@+id/editA"
+        android:layout_width="244dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="Введите A"
+        android:inputType="textPersonName"
+        android:text="@string/edit_text_a"
+        android:translationY="0sp"
+        app:layout_constraintBottom_toTopOf="@+id/editB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textShow" />
+
+    <EditText
+        android:id="@+id/editB"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Введите B"
+        android:inputType="textPersonName"
+        android:text="@string/edit_text_b"
+        android:translationY="0sp"
+        app:layout_constraintBottom_toTopOf="@+id/editC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editA" />
+
+    <EditText
+        android:id="@+id/editC"
+        android:layout_width="246dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="86dp"
+        android:ems="10"
+        android:hint="Введите C"
+        android:inputType="textPersonName"
+        android:text="@string/edit_text_c"
+        android:translationY="0sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonShow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editB" />
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="271dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="onClickTest"
+        android:text="@string/button_text"
+        android:textSize="18sp"
+        android:translationY="-470sp"
+        app:cornerRadius="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editC" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
